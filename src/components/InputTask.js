@@ -52,10 +52,6 @@ export default function Task(){
     useEffect(()=>{
         localStorage.setItem('tasks', JSON.stringify(tasks))
     },[tasks])
-    
-    useEffect(() => {
-        setTasks(tasks)
-    }, [tasks])
 
 
     const list= tasks.map((i, index) => {
