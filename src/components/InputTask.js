@@ -54,8 +54,8 @@ export default function Task(){
     },[tasks])
     
     useEffect(() => {
-        console.log(text)
-    }, [text])
+        setTasks(tasks)
+    }, [tasks])
 
 
     const list= tasks.map((i, index) => {
