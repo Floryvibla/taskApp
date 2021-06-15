@@ -53,6 +53,8 @@ export default function Task(){
         localStorage.setItem('tasks', JSON.stringify(tasks))
     },[tasks])
 
+    let len= tasks.length
+
 
     const list= tasks.map((i, index) => {
         return(
@@ -79,7 +81,7 @@ export default function Task(){
         <div className="container">
             <div className="header">
                 <div className="header-title">
-                    Você tem {tasks.length} {tasks.length <= 1 ? "tarefa" : "tarefas"}
+                    Você tem {len} {len <= 1 ? "tarefa" : "tarefas"}
                 </div>
                 <div className="input-div">
                     <Input 
